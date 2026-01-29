@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/students")
-@CrossOrigin(origins = "*") // Allow frontend to access
+@CrossOrigin(origins = {"https://dinesh-student-management.netlify.app", "http://localhost:*"})
 public class StudentController {
 
     @Autowired
